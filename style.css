@@ -1,0 +1,63 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to left top, #a14256, #a785);
+}
+
+body,
+.container,
+.numbers {
+  font-family: "Helvetica Neue", Helvetica;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.container,
+.numbers {
+  gap: 8px;
+}
+
+.numbers {
+  padding: 0 10px;
+}
+
+button i {
+  pointer-events: none;
+}
+
+button,
+a {
+  text-decoration: none;
+  text-align: center;
+  line-height: 25px;
+  border: 1px solid #ddd;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+a.active {
+  background-color: blueviolet;
+  color: white;
+}
